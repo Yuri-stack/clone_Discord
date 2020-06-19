@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ExpandMore } from 'styled-icons/material';
 
 export const Container = styled.div`
     display: flex;
@@ -10,12 +11,15 @@ export const Container = styled.div`
     z-index: 2;
 `;
 
-export const Title = styled.div`
+export const Title = styled.h1`
     font-size: 16px;
     font-weight: bold;
     color: var(--white);
 `;
 
-export const ExpandIcon = styled.div`
-
+export const ExpandIcon = styled(ExpandMore)`
+    width: 28px;
+    height: 28px;
+    color: var(--white);
+    cursor: pointer;
 `;
